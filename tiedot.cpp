@@ -9,7 +9,7 @@
 #include "maarittely.hpp"
 
 
-henkiloLista* luoLista()
+henkiloLista* luoLista() //luodaan ja alustetaan henkiloLista
 {
     henkiloLista* lista = new henkiloLista;
     lista->ensimmainen = 0;
@@ -17,7 +17,7 @@ henkiloLista* luoLista()
     return lista;
 }
 
-henkilo* luoHenkilo(henkiloLista* lista)
+henkilo* luoHenkilo(henkiloLista* lista) //luodaan uusi henkilo ja lisätään listaan
 {
     henkilo* uusi = new henkilo;
 
@@ -41,7 +41,7 @@ henkilo* luoHenkilo(henkiloLista* lista)
     return uusi;
 }
 
-void lisaaHenkilo(henkiloLista* lista)
+void lisaaHenkilo(henkiloLista* lista) //kysyy käyttäjältä henkilön tiedot
 {
     henkilo* uusi = luoHenkilo(lista);
 
@@ -72,6 +72,7 @@ henkilo* haeHenkiloNumerolla(henkiloLista* lista, int i) // hakee listasta n:nne
         it = it->seuraava;
     }
     assert(0); //lista loppui kesken, virheellistä toimintaa
+	return 0; 
 }
 
 henkilo* kysyHenkilo(henkiloLista* lista)

@@ -2,12 +2,11 @@
     Ohjelma: Henkilötiedostohallintasysteemi
     Tekijä: Antti Mäkelä
     Kuvaus: Ohjelma kysyy käyttäjältä eri henkilöiden tietoja ja tallentaa ne tietokantaan. Tietokanta voidaan tallentaa tiedostoon.
-            Käännetty MinGW GCC 4.8.1
     Versio: 1
 
+*/
 
-
-
+/*
     Tiedosto: main.cpp
     Tarkoitus: Sisältää pääohjelman main() joka hoitaa eri aliohjelmien kutsun pääosin aliohjelman valikko() palauttaman arvon perusteella
 */
